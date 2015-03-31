@@ -1,0 +1,15 @@
+- hosts: riak_cluster
+  sudo: True
+  roles:
+  - { role: basho.riakcs-packages, tags: ["riakcs", "packages"] }
+  - { role: basho.riakcs, tags: ["riakcs"] }
+
+- hosts: stanchion
+  sudo: True
+  roles:
+  - { role: basho.stanchion, tags: ["stanchion"] }
+
+- hosts: riak_cluster
+  sudo: True
+  roles:
+  - glickbot.serf

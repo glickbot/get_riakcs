@@ -1,0 +1,8 @@
+- name: install unzip
+  yum: name=unzip state=installed
+
+- name: download serf
+  command: curl -L -o /tmp/serf.zip {{ serf_url }} creates=/tmp/serf.zip
+
+- name: install serf
+  command: chdir=/usr/local/bin unzip /tmp/serf.zip creates=/usr/local/bin/serf

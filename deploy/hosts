@@ -1,0 +1,5 @@
+[riak_cluster]
+localhost ansible_connection=local
+
+[stanchion:children]
+riak_cluster

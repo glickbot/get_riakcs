@@ -1,0 +1,4 @@
+---
+riakcs_custom_package: http://s3.amazonaws.com/downloads.basho.com/riak-cs/1.5/1.5.4/rhel/6/riak-cs-1.5.4-1.el6.x86_64.rpm
+riakcs_package_release: 1
+riakcs_version: latest

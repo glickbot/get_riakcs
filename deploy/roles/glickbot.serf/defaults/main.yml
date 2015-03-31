@@ -1,0 +1,4 @@
+---
+serf_version: 0.6.4
+serf_url: https://dl.bintray.com/mitchellh/serf/{{ serf_version }}_linux_amd64.zip
+serf_dest: /usr/local/bin
